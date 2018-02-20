@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>Colector de Cristales</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	</head>
+	<body>
+
+<!-- Primer contenedor  -->
+		<div class="container">
+
+			<!--  Jumbotron Colector de cristales -->
+			<div class="jumbotron" style="background-color: purple; color: white;">
+				<div class="container">
+					<h1 class="text-center"><strong>Colector de Cristales</strong></h1>
+				</div>
+			</div>
+
+
+			<!-- Instructiones del juego -->
+			<div class="row">
+
+				<!-- Instructions Container -->
+				<div class="col-lg-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center">Instruciones</h3>
+						</div>
+						<div class="panel-body">
+							<p><small>Te seran dados un numero al azar de cristales al inicio. Hay cuatro tipos de cristales. tocando con el cursor cada cristal, agregaras un cierto numero de puntos a tus puntos totales. Ganaras el juego si tu numero final es el mismo que el numero seleccionado al azar, perderas el juego si te pasas en el numero de puntos arriba del numero al azar. El valor de cada cristal estara escondido hasta que toques dicho cristal que agregara los puntos que contiene a tu total. Cada vez que el juego comience los cristales tendran un valor en puntos diferente</small></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Puntos y cristales  -->
+			<div class="row">
+
+				<!-- Meta de puntos -->
+				<div class="col-lg-3">
+
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center">Meta de Puntos</h3>
+						</div>
+						<div class="panel-body">
+							<h3 class="text-center" id="target-score"></h3>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tus puntos -->
+				<div class="col-lg-3">
+
+          <div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center">Tus Puntos</h3>
+						</div>
+						<div class="panel-body">
+							<h3 class="text-center" id="your-score"></h3>
+						</div>
+					</div>
+				</div>
+
+				<!-- Cristales! -->
+				<div class="col-lg-6">
+
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center">Selector de Cristales</h3>
+						</div>
+						<div class="panel-body text-center">
+							<img src="images/blue.png" alt="" id="blue">
+							<img src="images/green.png" alt="" id="green">
+							<img src="images/red.png" alt="" id="red">
+							<img src="images/yellow.png" alt="" id="yellow">
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<!-- Contador de filas -->
+			<div class="row">
+
+				<!-- Contador -->
+				<div class="col-lg-6">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center">Cuenta Ganadora</h3>
+						</div>
+						<div class="panel-body">
+							<h3 class="text-center" id="win-count">0</h3>
+						</div>
+					</div>
+				</div>
+
+				<!-- Loss Count -->
+				<div class="col-lg-6">
+
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center">Cuenta Perdedora</h3>
+						</div>
+						<div class="panel-body">
+							<h3 class="text-center" id="loss-count">0</h3>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- JQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Main Game Logic  -->
+		<script src="assets/javascript/game.js"></script>
+	</body>
+</html>
+ff
